@@ -7,7 +7,7 @@
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), #480000 200%), url("../../media/pictures/jinx2.jpg");
+    background-image: linear-gradient(to top left, violet, darkblue);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -20,7 +20,7 @@
 }
 
 .music {
-    width: 85%;
+    width: 65%;
     padding: 30px;
     box-sizing: border-box;
     background: #000;
@@ -52,3 +52,74 @@
     margin-right: 20px;
     cursor: pointer;
 }
+
+a {
+    font: 1.75em whitesmoke;
+    font-family: "poppins", sans-serif;
+    background: gray;
+    display: flex;
+    border-radius: 30px;
+    border: solid black 2px;
+    filter: drop-shadow(0 0 50px black);
+
+    /*Border-Animation*/
+    position: relative;
+    z-index: 10;
+}
+
+.links{
+    height: 40vh;
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 10px black);
+    background-image: linear-gradient(rgba(0,0,0,0.5), #480000 250%), url('../../media/pictures/speaker1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid black 10px;
+
+    /*Border-Animation*/
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+/*Border-Animation*/
+.links::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 120%;
+    background: linear-gradient(darkblue, violet);
+    animation: animate 4s linear infinite;
+    background-size: 70%;
+}
+
+.links::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: url("../../media/pictures/speaker2.gif");
+    background-size: 100%;
+}
+
+#back {
+    background-color: #480000;
+
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
