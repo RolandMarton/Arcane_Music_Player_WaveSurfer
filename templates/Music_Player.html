@@ -3,13 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music_Player</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <script src="https://unpkg.com/wavesurfer.js"></script>
 </head>
 <body>
     <div class="hero">
         <div class="music">
-            <img src="media/jinx_left_half.jpg">
+            <img src="../media/pictures/jinx_left_half.jpg">
             <div class="info">
                 <h2>ARCANE: Goodbye | CINEMATIC COVER (Feat. Aloma Steele)</h2>
                 <p>Ramsey & Arcane (Alexander Seaver). <br> Cover Produced by Samuel Kim & Trevor Hoffmann (Feat. @Aloma Steele )</p>
@@ -18,9 +18,9 @@
 <!--                </audio>-->
                 <div id="waveform"></div>
                 <div class="controls">
-                    <img src="media/play.png" id="playBtn">
-                    <img src="media/stop.png" id="stopBtn">
-                    <img src="media/volume.png" id="volumeBtn">
+                    <img src="../media/pictures/play.png" id="playBtn">
+                    <img src="../media/pictures/stop.png" id="stopBtn">
+                    <img src="../media/pictures/volume.png" id="volumeBtn">
                 </div>
             </div>
         </div>
@@ -44,33 +44,34 @@
             barRadius: 4
         });
 
-        wavesurfer.load("media/ARCANE%20-%20Goodbye%20_%20CINEMATIC%20COVER%20(Feat.%20Aloma%20Steele).mp3")
+        wavesurfer.load("../../media/music/Arcane-Goodbye_Cover.mp3")
 
         playBtn.onclick = function(){
             wavesurfer.playPause();
             if(playBtn.src.includes("play.png")){
-                playBtn.src = "media/pause.png";
+                playBtn.src = "../../media/pictures/pause.png";
             }else{
-                playBtn.src = "media/play.png";
+                playBtn.src = "../../media/pictures/play.png";
             }
         }
         stopBtn.onclick = function(){
             wavesurfer.stop();
-            playBtn.src = "media/play.png";
+            playBtn.src = "../../media/pictures/play.png";
         }
         volumeBtn.onclick = function(){
             wavesurfer.toggleMute();
             if(volumeBtn.src.includes("volume.png")){
-                volumeBtn.src = "media/mute.png";
+                volumeBtn.src = "../../media/pictures/mute.png";
             }else{
-                volumeBtn.src = "media/volume.png";
+                volumeBtn.src = "../../media/pictures/volume.png";
             }
         }
         wavesurfer.on('finish', function()  {
             wavesurfer.params.container.style.opacity = 0.9;
-            playBtn.src = "media/play.png";
+            playBtn.src = "../../media/pictures/play.png";
             wavesurfer.stop();
         });
+
 
     </script>
 
