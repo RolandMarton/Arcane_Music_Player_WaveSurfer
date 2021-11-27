@@ -1,0 +1,13 @@
+#footer {
+    background-color: black;
+    border: solid black 15px;
+    filter: drop-shadow(0 0 50px black);
+}
+
+footer p {
+    background-image: linear-gradient(to left top, violet, darkblue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

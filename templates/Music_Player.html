@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Music_Player</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/footer_style.css">
+    <link rel="stylesheet" href="../static/css/header_style.css">
+    <link rel="stylesheet" href="../static/css/music_player_style.css">
     <script src="https://unpkg.com/wavesurfer.js"></script>
 </head>
 <body>
+   <header>
+        <a class="logo" href="/"><img src="/media/pictures/VibeHub_Logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href = "https://www.google.com">Home</a></li>
+                <li><a href = "https://telex.hu/">News</a></li>
+                <li><a href = "https://codecool.com/hu/rolunk-kapcsolat/">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href = "https://codecool.com/hu/kapcsolat/">Contact</a>
+        <p class="menu cta">Menu</p>
+    </header>
+   <script type="text/javascript" src="/static/js/mobile.js"></script>
     <div class="hero">
         <div class="links">
             <a href="#"><img src="/media/pictures/backward.png"></a>
@@ -32,6 +54,12 @@
             <a href="#"><img src="/media/pictures/forward.png"></a>
         </div>
     </div>
+    <div id="footer">
+        <footer>
+            <p>.</p>
+        </footer>
+    </div>
+
 
     <script>
         var playBtn = document.getElementById("playBtn");
