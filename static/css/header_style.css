@@ -12,6 +12,28 @@ header {
   background-color: black;
 }
 
+
+.cta {background-image: linear-gradient(to right, violet 0%, darkblue  51%, violet  100%)}
+.cta {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.cta:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
 .logo {
   cursor: pointer;
   background-color: black;
@@ -43,21 +65,21 @@ header {
 }
 
 .nav__links li a:hover {
-  background-image: linear-gradient(to bottom right, violet, darkblue);
+  background-image: linear-gradient(to right, violet 0%, darkblue  51%, violet  100%);
 }
 
-.cta {
-  padding: 9px 25px;
-  background-image: linear-gradient(to bottom right, violet, darkblue);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease 0s;
-}
+/*.cta {*/
+/*  padding: 9px 25px;*/
+/*  background-image: linear-gradient(to bottom right, violet, darkblue);*/
+/*  border: none;*/
+/*  border-radius: 50px;*/
+/*  cursor: pointer;*/
+/*  transition: background-color 0.3s ease 0s;*/
+/*}*/
 
-.cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
-}
+/*.cta:hover {*/
+/*  background-color: rgba(0, 136, 169, 0.8);*/
+/*}*/
 
 /* Mobile Nav */
 
